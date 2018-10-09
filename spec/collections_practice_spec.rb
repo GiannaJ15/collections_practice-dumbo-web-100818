@@ -22,13 +22,21 @@ describe 'collections practice' do
       expect(sort_array_char_count(["dogs", "cat", "Horses"])).to eq(["cat", "dogs", "Horses"])
     end
   end
-
+ 
   # Question 4
   describe '#swap_elements' do
     it 'swap the second and third elements of an array' do
       expect(swap_elements(["blake", "ashley", "scott"])).to eq(["blake", "scott", "ashley"])
     end
   end
+  
+  #Question 4.5 
+   describe 'swap_elements_from_to' do 
+    it 'should take in three arguments, array, index, and destination_index, and with this you should be able to specify the index of the element you would like to move and to where' do 
+      expect(swap_elements_from_to(["blake", "tobias", "nina", "courtney"],0,3)).to eq(["courtney","tobias","nina","blake"])
+    end 
+  end 
+
 
   # Question 5
   describe '#reverse_array' do
